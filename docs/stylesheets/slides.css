@@ -13,7 +13,13 @@
     --hogent-red: #ef8767;
     --hogent-white: #ffffff;
     --hogent-black: #000000;
-    --hogent-font-family: "Montserrat", "Arial", sans-serif;
+    --hogent-font-family: "Vollkorn", Palatino, Times, "Times New Roman",
+                        "Songti SC", "Noto Serif SC", "Noto Serif CJK SC",
+                        "Source Han Serif SC", "SimSun",
+                        serif;
+
+    --code-font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+                        "Liberation Mono", "Courier New", monospace;
 
     --wikipedia-a-color: #3366cc;
     --wikipedia-code-bg-color: #f8f8f8;
@@ -44,9 +50,8 @@
 }
 
 body {
-    background: url("https://hogenttin.github.io/cdn/logo/HOGENT.svg");
     background-size: 10vh;
-    background-position: right 2ch bottom 3ch;
+    background-position: right 1.8ch bottom 0.6ch;
     background-repeat: no-repeat;
     font-family: var(--hogent-font-family);
     font-weight: 400;
@@ -108,7 +113,7 @@ a:hover {
 
 code {
     background-color: var(--inline-code-bg-color);
-    font-family: "Inconsolata", monospace;
+    font-family: var(--code-font-family);
     font-size: 0.8em;
     padding: 0.2em 0.4em 0.2em 0.4em;
     border-width: 0.1ch;
